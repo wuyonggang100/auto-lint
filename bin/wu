@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 
 // 配置可执行命令,获取用户参数
-const program = require("commander");         
+const program = require("commander");
 const chalk = require("chalk");
- 
-const cleanArgs = (cmd) => {      
+
+const cleanArgs = (cmd) => {
   const args = {};
   cmd.options.forEach((op) => {
     const key = op.long.slice(2); // long 表示完整选项， short 表示简写， 如 --foce 简写成 -f, slice(2) 表示去掉 -- 以后的干净值
@@ -28,7 +28,7 @@ program
   });
 
 // 创建一个 config 命令，写入配置
-program        
+program
   .command("config [value]")
   .description("inspect and modify the config")
   .option("-g --get <path>", "get value from option")
@@ -37,17 +37,16 @@ program
   .action((value, options, cmd) => {
     console.log("options-----", cmd);
     console.log("value-----", value);
-    console.log("options-----", options); 
+    console.log("options-----", options);
   });
 
-program.command('ui').description('start and open wu-cli ui')
-.option('-p, --port <port>','Port used for the UI Server')
-.action((cmd)=>{
-  console.log((cleanArgs(cmd)))
-})
-
- 
-
+program
+  .command("ui")
+  .description("start and open wu-cli ui")
+  .option("-p, --port <port>", "Port used for the UI Server")
+  .action((cmd) => {
+    console.log(cleanArgs(cmd));
+  });
 
 //  版本号
 program
