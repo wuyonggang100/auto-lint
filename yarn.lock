@@ -142,6 +142,11 @@ chardet@^0.7.0:
   resolved "https://registry.npmmirror.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+child_process@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/child_process/-/child_process-1.0.2.tgz#b1f7e7fc73d25e7fd1d455adc94e143830182b5a"
+  integrity sha512-Wmza/JzL0SiWz7kl6MhIKT5ceIlnFPJX+lwUGj7Clhy5MMldsSoJR0+uvRzOS5Kv45Mq7t1PoE8TsOA9bzvb6g==
+
 cli-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmmirror.com/cli-cursor/-/cli-cursor-3.1.0.tgz#264305a7ae490d1d03bf0c9ba7c925d1753af307"
@@ -1223,3 +1228,16 @@ yauzl@^2.4.2:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
+
+zl-gitckt-specdir@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/zl-gitckt-specdir/-/zl-gitckt-specdir-1.0.0.tgz#34fb5fa38846854fb984186006b4e02dc1b30297"
+  integrity sha512-DjJJtc6xCtiukpp4bODR5W9S6FBmbJjKaoPfjHA4dS/1NNaF/p09xt0hviQk/gwpCfwVmJkwe6C2ZSeVgjhLXA==
+  dependencies:
+    child_process "^1.0.2"
+    zl-nodefs "^1.1.2"
+
+zl-nodefs@^1.1.2, zl-nodefs@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.npmmirror.com/zl-nodefs/-/zl-nodefs-1.1.6.tgz#05091b80e76d674c4ee54a77f95386b4267b8993"
+  integrity sha512-fDv+gA+ZMzmDMV0oF/Do/9IgnNqVIx6VbMaY2OyDtOmlhQ7BKIUjJA5TRXbWNaRWNTpM7uWviVhstcxJORli1Q==
