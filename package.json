@@ -1,13 +1,14 @@
 {
   "name": "auto-lint",
   "version": "1.0.0",
+  "repository": "https://github.com/wuyonggang100/auto-lint.git",
+  "author": "gang <408727759@qq.com>",
   "description": "",
   "main": "index.js",
   "bin": {
     "auto-lint": "./bin/main"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["auto","lint","husky"],
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
