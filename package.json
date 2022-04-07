@@ -8,12 +8,17 @@
   "bin": {
     "auto-lint": "./bin/main"
   },
-  "keywords": ["auto","lint","husky"],
+  "keywords": [
+    "auto",
+    "lint",
+    "husky"
+  ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^9.0.0",
     "fs-extra": "^10.0.0",
+    "ora": "^5.1.1",
     "zl-nodefs": "^1.1.6"
   }
 }
