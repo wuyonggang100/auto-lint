@@ -1,0 +1,36 @@
+#! /usr/bin/env node
+
+// 配置可执行命令,获取用户参数
+const program = require("commander");
+const chalk = require("chalk");
+
+const cleanArgs = (cmd) => {
+  const args = {};
+  cmd.options.forEach((op) => {
+    const key = op.long.slice(2); // long 表示完整选项， short 表示简写， 如 --foce 简写成 -f, slice(2) 表示去掉 -- 以后的干净值
+    console.log("=key=====", key);
+    if (cmd[key]) args[key] = cmd[key];
+  });
+  return args;
+};
+
+program
+  // .command("automatic-lint") // 创建新项目, <> 或 [] 内表示参数
+  .description("add auto-lint rules for project") // 命令描述
+  .action((name, options, cmd) => {
+    require("../lib/autoLint")();
+  });
+
+//  版本号
+program
+  .version(`wu-cli@${require("../package.json").version}`)
+  .usage(`<command> [option]`); // <> 内的表示参数
+
+program.on("--help", () => {
+  console.log();
+  console.log(`Run ${chalk.red("wu-cli <command> --help ")} show details`);
+  console.log();
+});
+
+// 命令后面带的参数
+program.parse(process.argv);
