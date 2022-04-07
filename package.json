@@ -1,6 +1,6 @@
 {
   "name": "auto-git-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/wuyonggang100/auto-lint.git",
   "author": "gang <408727759@qq.com>",
   "description": "",
@@ -15,6 +15,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "auto-git-lint": "^1.0.2",
     "chalk": "^4.1.0",
     "commander": "^9.0.0",
     "fs-extra": "^10.0.0",

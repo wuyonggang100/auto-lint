@@ -14,6 +14,17 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
+auto-git-lint@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/auto-git-lint/-/auto-git-lint-1.0.2.tgz#9056b915aee7be178b190959b66e59c7082a3843"
+  integrity sha512-W+dTIVZOgP8mZJMCv4NSSXZwZxzHpeKwLe3KEqq4fugUVqGxljYU+13NSPO9WQObrZ9oI7vtso0VyXKKBXAeNw==
+  dependencies:
+    chalk "^4.1.0"
+    commander "^9.0.0"
+    fs-extra "^10.0.0"
+    ora "^5.1.1"
+    zl-nodefs "^1.1.6"
+
 base64-js@^1.3.1:
   version "1.5.1"
   resolved "https://registry.npmmirror.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
