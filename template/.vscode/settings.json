@@ -1,6 +1,6 @@
 {
   "eslint.validate": [
-     "javascirpt",
+     "javascirpt",        
      "typescript"
    ],
    "editor.codeActionsOnSave": {

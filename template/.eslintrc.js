@@ -4,12 +4,17 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  parser: "@typescript-eslint/parser",
+
+  //  eslint-config-prettier: 禁用所有和 Prettier 产生冲突的规则
+  //  eslint- plugin - prettier: 把 Prettier 应用到 Eslint，配合 rules "prettier/prettier": "error" 实现 Eslint 提醒。
+  extends: ["eslint:recommended",
+    //  'plugin:@typescript-eslint/recommended', 
+    "plugin:prettier/recommended"],
+  // parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 12
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["prettier"],
 
   // "off" or 0   - 关闭
   // "warn" or 1  - 开启，不遵守会报警，可以编译成功
