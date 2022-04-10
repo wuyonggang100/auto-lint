@@ -18,7 +18,9 @@ auto-lint
 
 
 
+支持 ts， js， jsx 
 
+说明：
 
 - eslint：ESLint的核心代码库；
 - @typescript-eslint/parser：解析器，让ESLint拥有规范TypeScript代码的能力；
@@ -32,6 +34,8 @@ auto-lint
 - eslint-config-prettier：用于禁用与Prettier有冲突的ESLint规则；
 
 - eslint-plugin-prettier：将Prettier作为ESLint的规则来运行。这样就可以通过ESLint的`--fix`来自动修复代码了
+
+  
 
   
   
