@@ -24,7 +24,7 @@ module.exports = {
       jsx: true // 允许解析JSX
     }
   },
-  plugins: ["prettier"],
+  plugins: ["prettier", "@typescript-eslint"],
 
   // "off" or 0   - 关闭
   // "warn" or 1  - 开启，不遵守会报警，可以编译成功
