@@ -3,17 +3,26 @@ module.exports = {
     commonjs: true,
     es2021: true,
     node: true,
+    browser: true
   },
 
   //  eslint-config-prettier: 禁用所有和 Prettier 产生冲突的规则
   //  eslint- plugin - prettier: 把 Prettier 应用到 Eslint，配合 rules "prettier/prettier": "error" 实现 Eslint 提醒。
-  extends: ["eslint:recommended",
-    //  'plugin:@typescript-eslint/recommended', 
-    "plugin:prettier/recommended"],
-  // parser: "@typescript-eslint/parser",
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    // 'prettier/@typescript-eslint', // 此配置已经合并进入 prettier 中了, 不需要此项
+    "plugin:prettier/recommended"
+  ],
+
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module'
+    ecmaVersion: 2021,
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true // 允许解析JSX
+    }
   },
   plugins: ["prettier"],
 
@@ -34,6 +43,6 @@ module.exports = {
     "no-promise-executor-return": "off",
     "no-unreachable-loop": "off",
     "no-unsafe-optional-chaining": "off",
-    ident: ["off", 2],
-  },
+    ident: ["off", 2]
+  }
 };
