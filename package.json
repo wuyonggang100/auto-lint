@@ -1,6 +1,6 @@
 {
   "name": "auto-git-lint",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "repository": "https://github.com/wuyonggang100/auto-lint.git",
   "author": "gang <408727759@qq.com>",
   "description": "",
@@ -24,6 +24,7 @@
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
     "fs-extra": "^10.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
